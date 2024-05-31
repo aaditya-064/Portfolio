@@ -12,7 +12,9 @@ body{
     /* background: linear-gradient(to bottom, green, red, yellow); */
     /* min-height: 100vh; */
     background: linear-gradient(to bottom, #757EAD, white);
+    /* background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);; */
     scroll-behavior: smooth;
+    padding-bottom: 50px;
 }
 
 .container{
@@ -49,17 +51,18 @@ header{
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
-section{
+/* section{
 
-    background: linear-gradient(to bottom, #757EAD, #E49BFF);
-}
+    background: linear-gradient(to bottom, #5C2FC2, white);
+} */
 
 main{
     padding-bottom: 50px;
     /* margin-left: -700px; */
+    flex: 1;
 }
 
 main .home_page{
@@ -85,9 +88,18 @@ main .home_page .front_end{
     font-size: 30px;
 }
 
+main .home_page a{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    width: 140px;
+    height: 35px;
+    margin-top: 25px;
+
+}
+
 main .home_page .visit_btn{
     width: 140px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     border: 0;
     border-radius: 20px;
     padding: 15px;
@@ -97,7 +109,7 @@ main .home_page .visit_btn{
     justify-content: center;
     align-items: center;
     color: white;
-    background: #850F8D;
+    background: #5C2FC2;
     opacity: 0.8;
     transition: all 0.2s ease-in-out;
 }
@@ -113,6 +125,7 @@ main .about_page{
     flex-direction: row;
     /* min-width: 100vh; */
     margin-top: 110px;
+    /* padding-bottom: -1000px; */
 }
 
 main .about_page img{
@@ -131,7 +144,7 @@ main .about_page .description p{
 }
 
 main .about_page .description h1{
-    color: #850F8D;
+    color: #5C2FC2;
     font-size: 40px;
 }
 
@@ -143,8 +156,8 @@ main .about_page .description .paragraph_{
 }
 
 main .about_page .description .cv_btn{
-    color: #850F8D;
-    border: 1px solid #850F8D;
+    color: #5C2FC2;
+    border: 1px solid #5C2FC2;
     margin-top: 40px;
     padding: 13px 1.8rem;
     border-radius: 30px;
@@ -152,7 +165,7 @@ main .about_page .description .cv_btn{
 }
 
 main .about_page .description .cv_btn:hover{
-    background: #850F8D;
+    background: #5C2FC2;
     color: white;
     transition: all 0.2s ease-in-out;
 }
@@ -161,7 +174,7 @@ main .skills_page{
     /* min-height: 100vh; */
     text-align: center;
     /* margin-top: 100px; */
-    /* background: linear-gradient(to top, #757EAD, white); */
+    /* background: linear-gradient(to top, #5C2FC2, white); */
 }
 
 main .skills_page p{
@@ -172,7 +185,7 @@ main .skills_page p{
 
 main .skills_page h1{
     margin-top: 5px;
-    color: #850F8D;
+    color: #5C2FC2;
     font-size: 60px;
 }
 
@@ -186,7 +199,7 @@ main .skills_page .skills{
     align-items: flex-end;
     position: relative;
     /* background-color: orange; */
-    margin-left: 40px;
+    margin-left: 140px;
 
 }
 
@@ -269,11 +282,11 @@ main .skills_page .skills .div_css:hover > p{
 
 main .skills_page .skills .div_js:hover{
     height: 250px;
+
     /* position: relative; */
     /* bottom: 50px; */
     transition: all 0.2s ease-in-out;
 }
-
 main .skills_page .skills .div_js:hover > img{
     width: 150px;
     margin-bottom: 90px;
@@ -306,8 +319,138 @@ main .skills_page .skills .div_gitHub:hover > p{
     opacity: 1;
     bottom: 15px;
     transition: all 0.2s ease-in-out;
-    font-size: 15px;
     width: 200px;
+    font-size: 15px;
+}
+
+main .portfolio_page {
+    margin-top: 250px;
+}
+
+main .portfolio_page .projects{
+    display: flex;
+    margin-top: 120px;
+    gap: 30px;
+    margin-left: 250px;
+}
+
+main .portfolio_page .projects div{
+    width: 200px;
+    height: 200px;
+    border: 3px solid grey;
+}
+
+
+
+.hireMe{
+    margin-top: 150px;
+    background: #5C2FC2;
+    /* padding-bottom: 200px; */
+}
+
+.hireMe .hireMe_page{
+    height: 150px;
+    margin-top: 30px;
+    width: 100vw;
+    /* margin-left: -25vw; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hireMe .hireMe_page .work_with_me h2{
+    font-size: 35px;
+}
+
+.hireMe .hireMe_page .work_with_me p {
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.hireMe .hireMe_page .hire_me{
+    padding: 12px 1.5rem;
+    border: 0;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.contact_{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* background: orange; */
+}
+
+.contact_ .div_contact p{
+    font-family: sans-serif;
+    letter-spacing: 2px;   
+    font-size: 15px;
+}
+
+.contact_ .div_contact h1{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #5C2FC2;
+}
+
+.contact_ .div_contact .contact_form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact_ .div_contact .contact_form .name_email{
+    display: flex;
+    gap: 20px;
+}
+
+.contact_ .div_contact .contact_form .name_email input{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #CED4DA;
+    font-size: 17px;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.contact_ .div_contact .contact_form textarea{
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    outline: 0; 
+    border-radius: 5px;
+    resize: vertical;
+    border: 1px solid #CED4DA;
+}
+
+.contact_ .div_contact .contact_form .submitBtn{
+    width: 140px;
+    padding: 9px;
+    background: white;
+    border: 1px solid #695AA6;
+    color: #695AA6;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.contact_ .div_contact .contact_form .submitBtn:hover{
+    background: #695AA6;
+    color: white;
 }
 
 
