@@ -5,9 +5,9 @@
 }
 
 body{
-    font-family: "Jaro", sans-serif;
+    font-family: "Baloo Paaji 2", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     /* background: linear-gradient(to bottom, green, red, yellow); */
     /* min-height: 100vh; */
@@ -66,22 +66,38 @@ main .home_page{
 }
 
 main .home_page .hi_{
-    font-size: 70px;
-    font-weight: 100;
+    font-size: 100px;
+    /* font-weight: 600; */
+    font-weight: bold;
+    /* margin-top: -100px; */
     margin: 0;
+}
+
+main .home_page .myName {
+    font-size: 100px;
+    font-weight: bold;
+    /* margin-top: -70px; */
+    width: 700px;
+}
+
+main .home_page .myName span{
+    position: relative;
+    top: -35px;
+    font-size: 70px;
 }
 
 /* main .home_page .name_ {
     font-weight: 100;
-    font-size: 75px;
+    font-size: 75px;    
     margin-top: 5px;
 } */
 
 main .home_page .front_end{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 100;
-    /* margin-top: 5px; */
+    margin-top: -30px;
     font-size: 30px;
+    letter-spacing: 4px;
 }
 
 main .home_page a{
@@ -125,9 +141,11 @@ main .about_page{
 }
 
 main .about_page img{
-    width: 400px;
+    width: 350px;
     height: 350px;
     margin-top: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 main .about_page .description{
     margin-top: 50px;
@@ -136,7 +154,7 @@ main .about_page .description{
 main .about_page .description p{
     font-family: sans-serif;
     font-weight: 100;
-    color: #9B9B9B;
+    color: #0000008f;
     font-size: 15px;
 }
 
@@ -327,9 +345,18 @@ main .portfolio_page .projects{
 }
 
 main .portfolio_page .projects div{
-    width: 200px;
-    height: 200px;
-    border: 3px solid grey;
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+main .portfolio_page .projects div img{
+    position: absolute;
+    width: 100%;
+    /* border: 3px solid grey; */
+    height: 100%;
+    object-fit: cover;
+    margin-left: -135px;
 }
 
 .hireMe{
