@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Matemasie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Jersey+20+Charted&family=Matemasie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Rubik+Glitch&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: "Baskervville SC", serif;
+font-weight: 400;
+font-style: normal; */
+
+/* font-family: "Matemasie", sans-serif;
+font-weight: 400;
+font-style: normal; */
+
+.name_header {
+  /* font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.type_work {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.nav_links {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
