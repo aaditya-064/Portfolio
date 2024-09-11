@@ -5,12 +5,7 @@ import router from "./router/contact.routes.js";
 import morgan from "morgan";
 import cors from "cors";
 
-const app = express();
-app.use(express.json());
-app.use("/", router);
-app.use(morgan("tiny"));
-
-const whitelist = "http://localhost:5173";
+const whitelist = ["http://localhost:5173", "http://localhost:8080"];
 
 var corsOptions = {
   origin: function (origin, callback) {
@@ -26,7 +21,11 @@ var corsOptions = {
   },
 };
 
+const app = express();
+app.use(express.json());
 app.use(cors(corsOptions));
+app.use("/", router);
+app.use(morgan("tiny"));
 
 db.then(() => {
   console.log("DATABASE CONNECTED");
