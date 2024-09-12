@@ -13,13 +13,13 @@ const Contact = () => {
   const phoneLength = info.phoneNumber.length;
   const handleSubmit = async (e) => {
     e.preventDefault();
+    alert("I'LL CONTACT YOU SOON");
+    setInfo({ name: "", email: "", phoneNumber: "", subject: "", message: "" });
     await axios({
       url: "http://127.0.0.1:8080/post/",
       method: "post",
       data: info,
     });
-    alert("I'LL CONTACT YOU SOON");
-    setInfo({ name: "", email: "", phoneNumber: "", subject: "", message: "" });
   };
 
   const handleChange = (e) => {
