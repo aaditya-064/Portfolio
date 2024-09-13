@@ -16,7 +16,7 @@ const Contact = () => {
     alert("I'LL CONTACT YOU SOON");
     setInfo({ name: "", email: "", phoneNumber: "", subject: "", message: "" });
     await axios({
-      url: "http://127.0.0.1:8080/post/",
+      url: "https://aadityashresthadev.vercel.app/post/",
       method: "post",
       data: info,
     });
