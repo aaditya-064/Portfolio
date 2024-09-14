@@ -5,7 +5,11 @@ import router from "./router/contact.routes.js";
 import morgan from "morgan";
 import cors from "cors";
 
-const whitelist = ["http://localhost:5173", "http://localhost:8080"];
+const whitelist = [
+  "http://localhost:5173",
+  "http://localhost:8080",
+  "https://portfolio-org.onrender.com",
+];
 
 var corsOptions = {
   origin: function (origin, callback) {
