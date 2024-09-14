@@ -14,14 +14,15 @@ const whitelist = [
 
 var corsOptions = {
   origin: function (origin, callback) {
+    console.log(origin);
     if (!origin) {
       //for bypassing postman req with  no origin
       return callback(null, true);
     }
     if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
       callback(new Error("Not allowed by CORS"));
+    } else {
+      callback(null, true);
     }
   },
 };
