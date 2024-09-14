@@ -8,7 +8,8 @@ import cors from "cors";
 const whitelist = [
   "http://localhost:5173",
   "http://localhost:8080",
-  "https://portfolio-org.onrender.com",
+  "https://portfolio-org.onrender.com/",
+  "https://aadityashresthadev.vercel.app/",
 ];
 
 var corsOptions = {
