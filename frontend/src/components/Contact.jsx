@@ -18,8 +18,8 @@ const Contact = () => {
     alert("I'LL CONTACT YOU SOON");
     setInfo({ name: "", email: "", phoneNumber: "", subject: "", message: "" });
     await axios({
-      // url: "https://portfolio-org.onrender.com/post/",
-      url: "http://localhost:8080/post/",
+      url: "https://portfolio-org.onrender.com/post/",
+      // url: "http://localhost:8080/post/",
       method: "post",
       data: info,
     });
