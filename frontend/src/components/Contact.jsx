@@ -88,7 +88,7 @@ const Contact = () => {
                   placeholder="Enter your mobile number"
                   className="outline-none bg-[#eeeeee] text-sm mt-2 p-3 placeholder:text-gray-500 placeholder:text-right placeholder_input w-44 sm:w-80"
                 />
-                {len === 10 ? (
+                {len === 9 ? (
                   ""
                 ) : (
                   <p className="text-red-500 text-right text-sm transition-all">
