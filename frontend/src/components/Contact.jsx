@@ -10,19 +10,23 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [len, setLen] = useState();
   const phoneLength = info.phoneNumber.length;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     alert("I'LL CONTACT YOU SOON");
     setInfo({ name: "", email: "", phoneNumber: "", subject: "", message: "" });
     await axios({
-      url: "https://portfolio-org.onrender.com/post/",
+      // url: "https://portfolio-org.onrender.com/post/",
+      url: "http://localhost:8080/post/",
       method: "post",
       data: info,
     });
   };
 
   const handleChange = (e) => {
+    setLen(phoneLength);
     const { name, value } = e.target;
     setInfo({ ...info, [name]: value });
   };
@@ -84,6 +88,13 @@ const Contact = () => {
                   placeholder="Enter your mobile number"
                   className="outline-none bg-[#eeeeee] text-sm mt-2 p-3 placeholder:text-gray-500 placeholder:text-right placeholder_input w-44 sm:w-80"
                 />
+                {len === 10 ? (
+                  ""
+                ) : (
+                  <p className="text-red-500 text-right text-sm transition-all">
+                    Please enter 10 digit number
+                  </p>
+                )}
               </div>
               <div className="flex flex-col w-full">
                 <label className="text-right font-bold text-xs ml-2 mt-2">
