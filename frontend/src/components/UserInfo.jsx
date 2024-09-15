@@ -7,7 +7,7 @@ const UserInfo = () => {
   useEffect(() => {
     const fetchAPI = async () => {
       const data = await axios({
-        url: "http://127.0.0.1:8080/get/",
+        url: "https://portfolio-org.onrender.com/get/",
         method: "get",
       });
       const arrData = data.data.all;
